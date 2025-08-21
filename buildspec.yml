@@ -19,5 +19,9 @@ phases:
       - printenv
   post_build:
     commands:
-      - echo "[Build Finish] `date`"
-  
+      - echo "[Build Finish] `date`"  
+artifacts:
+  files:
+    - '**/*'
+    # - 'index.html'
+  name: myweb-release
