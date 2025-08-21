@@ -2,10 +2,14 @@ version: 0.2
 
 phases:
   install:
-    runtime-version:
-      nodejs: 22.x
+    runtime-versions:
+      nodejs: 22
     commands:
       - echo "[Install] nodejs 22.x"
+      - echo "Node.js version:"
+      - node --version
+      - echo "npm version:"
+      - npm --version
   pre_build:
     commands:
       - echo "[Pre_Build] prebuild"
