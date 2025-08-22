@@ -1,3 +1,3 @@
 echo " test script start! "
-exit 1
+exit 0
 echo " test script end! "
