@@ -16,10 +16,7 @@ phases:
   build:
     commands:
       - echo "[Build Start] `date`"
-      - echo "---------------------"
-      - echo $MYWEB
-      - echo "---------------------"
-      - printenv 
+      - sh test.sh
   post_build:
     commands:
       - echo "[Build Finish] `date`"  
