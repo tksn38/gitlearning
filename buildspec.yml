@@ -17,7 +17,7 @@ phases:
     commands:
       - echo "[Build Start] `date`"
       - echo "---------------------"
-      - echo $AWS_DEFAULT_REGION
+      - echo $MYWEB
       - echo "---------------------"
       - printenv 
   post_build:
