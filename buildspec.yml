@@ -16,7 +16,10 @@ phases:
   build:
     commands:
       - echo "[Build Start] `date`"
-      - sh test.sh
+      - echo "---------------------"
+      - echo $AWS_DEFAULT_REGION
+      - echo "---------------------"
+      - printenv 
   post_build:
     commands:
       - echo "[Build Finish] `date`"  
