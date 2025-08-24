@@ -24,4 +24,5 @@ artifacts:
   files:
     # - '**/*'
     - 'index.html'
+    - 'appspec.yml'
   name: myweb-release
