@@ -1,28 +1,12 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 22
-    commands:
-      - echo "[Install] nodejs 22.x"
-      - echo "Node.js version:"
-      - node --version
-      - echo "npm version:"
-      - npm --version
-  pre_build:
-    commands:
-      - echo "[Pre_Build] prebuild"
   build:
     commands:
-      - echo "[Build Start] `date`"
-      - sh test.sh
-  post_build:
-    commands:
-      - echo "[Build Finish] `date`"  
+      - echo "Static Web Application"
 artifacts:
   files:
-    # - '**/*'
-    - 'index.html'
     - 'appspec.yml'
+    - 'index.html'
+    - 'scripts/*'
   name: myweb-release
